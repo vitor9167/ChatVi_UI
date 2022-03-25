@@ -50,7 +50,7 @@ namespace Chat_teste_.MVVM.ViewModel
                 {
                     NomeUsuario = "Vitor3",
                     CorUsuario = "#409aff",
-                    ImageSource = "./ViewModel/8b_2161_62348509a018b_min.jpeg",
+                    ImageSource = "",
                     Menssagem = "Teste",
                     Tempo = DateTime.Now,
                     IsNativeOringin = true,

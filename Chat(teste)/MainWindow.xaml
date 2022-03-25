@@ -95,6 +95,9 @@
                       Grid.Row="1"
                       ItemContainerStyle="{StaticResource CartaodeContato}"/>
 
+            <StackPanel>
+                
+            </StackPanel>    
 
 
         </Grid>

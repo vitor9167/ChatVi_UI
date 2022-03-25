@@ -13,5 +13,6 @@ namespace Chat_teste_.MVVM.Model
         public string ImageSource { get; set; }
         public ObservableCollection<ModeloMenssagem> Menssagens { get; set; }
         public string UltimaManssagem => Menssagens.Last().Menssagem;
+
     }
 }
