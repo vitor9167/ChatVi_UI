@@ -25,10 +25,30 @@
                                      Text="{Binding Menssagem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
 
                                 <TextBox.InputBindings>
-                                    <KeyBinding Command="{Binding SensCommand}" Key="Return"/>
+                                    <KeyBinding Command="{Binding SendCommand}" Key="Return"/>
                                 </TextBox.InputBindings>
-                                
                             </TextBox>
+
+                            <TextBlock IsHitTestVisible="False"
+                                       Text="@Menssagem"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       Foreground="DarkGray">
+
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=CaixaMenssagem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                                
+                            </TextBlock>
+                            
                         </Grid>
                         
                     </Border>
